@@ -51,6 +51,12 @@ We propose a novel method for generating the anchor image $\hat{x}$ from a publi
 
 A major challenge in achieving this utility goal is training $\mathcal{P}(\cdot)$ with the surrogate gaze estimator $\mathcal{G}_w()$ while aiming for good gaze estimation performance on the black-box gaze estimator $\mathcal{G}_b(\cdot)$. To address this challenge, we carefully generate the anchor image $\hat{x}$ to ensure that both $\mathcal{G}_w(\cdot)$ and $\mathcal{G}_b(\cdot)$ yield similar gaze estimation results on $\hat{x}$. This strategy enables $\mathcal{G}_w(\cdot)$ and $\mathcal{G}_b(\cdot)$ to achieve comparable gaze estimation performance on the obfuscated images $x'$, as they share similar appearances with the anchor image. 
 
+The anchor images generated on GazeCapture for EfficientNet, MobileNet, ResNet, ShuffleNet, and VGG respectively are shown as follows.
+
+<div align=center>
+<img src="https://github.com/LingyuDu/PrivateGaze/blob/main/figures/gazecapture_average_face_efficientnet.png" alt="My Image" width="150"/>                    <img src="https://github.com/LingyuDu/PrivateGaze/blob/main/figures/gazecapture_average_face_mobilenet.png" alt="My Image" width="150"/>          <img src="https://github.com/LingyuDu/PrivateGaze/blob/main/figures/gazecapture_average_face_res18.png" alt="My Image" width="150"/>          <img src="https://github.com/LingyuDu/PrivateGaze/blob/main/figures/gazecapture_average_face_shufflenet.png" alt="My Image" width="150"/>          <img src="https://github.com/LingyuDu/PrivateGaze/blob/main/figures/gazecapture_average_face_vgg.png" alt="My Image" width="150"/> 
+</div>
+
 ## Structure of the Privacy Preserver
 
 The structure of privacy preserver $\mathcal{P}(\cdot)$ is shown in the following figure, which consists of the gaze-feature extractor $F(\cdot)$ and the image generator $IG(\cdot)$. $F(\cdot)$ extracts gaze features $z$ from the raw image $x$ of the user. $IG(\cdot)$ takes the extracted gaze features $z$ and the anchor image $\hat{x}$ as inputs to generate the privacy-preserved obfuscated image $x'$. $x'$ has a similar appearance to $\hat{x}$ while retaining the gaze features extracted from $x$. Only the components with color-coded yellow will be deployed on the user's device after training for privacy preservation.
