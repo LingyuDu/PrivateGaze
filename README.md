@@ -13,9 +13,7 @@ Eye gaze contains rich information about human attention and cognitive processes
 * Pytorch
 
 ### Codes
-* The file Contrastive_gaze_representation_learning.ipynb contains the main function for contrastive gaze representation learning.
-* The file common_functions.py includes how to calculate the average angular error given a batch of images and gaze annotations.
-* The file trans_in_rgb.py details the data augmentation we adopted in this project.
+* 
 
 ## System Overview
 The illustration of PrivateGaze is shown in the folloing figure. The core of PrivateGaze is the privacy preserver, which transforms the original privacy-sensitive full-face image into an obfuscated version as input for the untrusted gaze estimation services. During the training stage, we train the privacy preserver with the assistance of a pre-trained surrogate gaze estimator. After training, the privacy preserve is deployed on the user's device to generate obfuscated images that can be used by the black-box gaze estimation services. This ensures accurate gaze estimation while preventing the user's private attributes, such as gender and identity, from being inferred by the service provider.
