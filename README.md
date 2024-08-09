@@ -8,7 +8,7 @@ Eye gaze contains rich information about human attention and cognitive processes
 
 ## Getting Started
 
-![Alt Text](https://github.com/LingyuDu/PrivateGaze/blob/main/figures/demo.gif)
+![Alt Text](https://github.com/LingyuDu/PrivateGaze/blob/main/figures/demo_new.gif)
 
 
 ## System Overview
