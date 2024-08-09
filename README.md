@@ -23,7 +23,7 @@ The illustration of PrivateGaze is shown in the following figure. The core of Pr
 ### Black-box gaze estimator
 We consider a more practical case where the gaze estimator $\mathcal{G}_b(\cdot)$ is performed by a black-box, deep learning-based model. Specifically, the black-box gaze estimator $\mathcal{G}_b(\cdot)$ is trained on an unknown dataset that contains raw full-face images and gaze annotations. Users can access gaze estimation services either through the cloud server or by installing the system directly on their local devices. In both cases, the user can only query and request $\mathcal{G}_b(\cdot)$ for service and has no knowledge about its implementation and 
 
-### Capabilities and goals of the malicious service provider.
+### Capabilities and goals of the malicious service provider
 We assume the malicious service provider can stealthily collect a dataset $\mathcal{D}_p$, comprising images submitted by users for gaze estimation service, along with annotations of private user attributes such as identity and gender. Subsequently, $\mathcal{D}_p$ is used to train classifiers aimed at discerning users' private attributes from images that do not belong to $\mathcal{D}_p$.
 
 ### Our goals
