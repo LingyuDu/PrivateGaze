@@ -8,12 +8,9 @@ Eye gaze contains rich information about human attention and cognitive processes
 
 ## Getting Started
 
-### Dependencies
-
-* Pytorch
-
-### Codes
-* 
+<video src="https://github.com/LingyuDu/PrivateGaze/blob/main/figures/demo.mp4" controls="controls" style="max-width: 100%;">
+  Your browser does not support the video tag.
+</video>
 
 ## System Overview
 The illustration of PrivateGaze is shown in the folloing figure. The core of PrivateGaze is the privacy preserver, which transforms the original privacy-sensitive full-face image into an obfuscated version as input for the untrusted gaze estimation services. During the training stage, we train the privacy preserver with the assistance of a pre-trained surrogate gaze estimator. After training, the privacy preserve is deployed on the user's device to generate obfuscated images that can be used by the black-box gaze estimation services. This ensures accurate gaze estimation while preventing the user's private attributes, such as gender and identity, from being inferred by the service provider.
