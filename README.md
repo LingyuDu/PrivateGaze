@@ -13,7 +13,7 @@ Raw images are captured by cameras from subjects; obfuscated images are converte
 
 
 ## System Overview
-The illustration of PrivateGaze is shown in the folloing figure. The core of PrivateGaze is the privacy preserver, which transforms the original privacy-sensitive full-face image into an obfuscated version as input for the untrusted gaze estimation services. During the training stage, we train the privacy preserver with the assistance of a pre-trained surrogate gaze estimator. After training, the privacy preserve is deployed on the user's device to generate obfuscated images that can be used by the black-box gaze estimation services. This ensures accurate gaze estimation while preventing the user's private attributes, such as gender and identity, from being inferred by the service provider.
+The illustration of PrivateGaze is shown in the following figure. The core of PrivateGaze is the privacy preserver, which transforms the original privacy-sensitive full-face image into an obfuscated version as input for the untrusted gaze estimation services. During the training stage, we train the privacy preserver with the assistance of a pre-trained surrogate gaze estimator. After training, the privacy preserve is deployed on the user's device to generate obfuscated images that can be used by the black-box gaze estimation services. This ensures accurate gaze estimation while preventing the user's private attributes, such as gender and identity, from being inferred by the service provider.
 
 <div align=center>
 <img src="https://github.com/LingyuDu/PrivateGaze/blob/main/figures/teaser_figure-1.png" alt="My Image" width="800"/>
@@ -58,4 +58,29 @@ The structure of privacy preserver $\mathcal{P}(\cdot)$ is shown in the followin
 
 <div align=center>
 <img src="https://github.com/LingyuDu/PrivateGaze/blob/main/figures/PrivacyPreserver-1.png" alt="My Image" width="500"/>
+</div>
+
+## Codes, Pretrained Gaze Estimators, and Anchor Images
+
+* Black-box gaze estimators trained on ETH-XGaze and the surrogate gaze estimator trained on GazeCapture are available at [black-box gaze estimators](https://drive.google.com/drive/folders/16M-xoarDf84FhGknnq6DajS4BO7wHbai?usp=drive_link).
+* Anchor images are available in figures/.
+* TrainPrivacyPreserver is the main file for training a privacy preserver given a black-box gaze estimator.
+* unet_models_v2.py defines the architectures of the privacy preserver. 
+
+## Citation 
+
+Please cite the following paper in your publications if the code helps your research.
+
+<div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+<pre>
+@article{du2024privategaze,
+  title={PrivateGaze: Preserving User Privacy in Black-box Mobile Gaze Tracking Services},
+  author={Du, Lingyu and Jia, Jinyuan and Zhang, Xucong and Lan, Guohao},
+  journal={Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies},
+  volume={8},
+  number={3},
+  year={2024},
+  publisher={ACM New York, NY, USA}
+}
+</pre>
 </div>
