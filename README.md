@@ -8,7 +8,7 @@ Eye gaze contains rich information about human attention and cognitive processes
 
 ## Real-time Video Demo
 
-![Alt Text](https://github.com/LingyuDu/PrivateGaze/blob/main/figures/demo_new.gif)
+![Alt Text](https://github.com/LingyuDu/PrivateGaze/blob/main/figures/demo.gif)
 Raw images are captured by cameras from subjects; obfuscated images are converted from raw images by the trained privacy preserver; estimated gazes visualize the gaze direction estimated from obfuscated images by the black-box gaze estimator. 
 
 
