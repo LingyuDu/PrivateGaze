@@ -1,6 +1,6 @@
 # PrivateGaze: Preserving User Privacy in Black-box Mobile Gaze Tracking Services
 
-This repository contains the introductions and the codes for IMWUT 2024 paper [PrivateGaze: Preserving User Privacy in Black-box Mobile Gaze Tracking Services](https://arxiv.org/pdf/2408.00950) by [Lingyu Du](https://github.com/LingyuDu), [Jinyuan Jia](https://jinyuan-jia.github.io/), [Xucong Zhang](https://www.ccmitss.com/zhang), and [Guohao Lan](https://guohao.netlify.app/). If you have any questions, please send an email to Lingyu.Du AT tudelft.nl.
+This repository contains the introductions and the codes for IMWUT 2024 paper [PrivateGaze: Preserving User Privacy in Black-box Mobile Gaze Tracking Services](https://dl.acm.org/doi/pdf/10.1145/3678595) by [Lingyu Du](https://github.com/LingyuDu), [Jinyuan Jia](https://jinyuan-jia.github.io/), [Xucong Zhang](https://www.ccmitss.com/zhang), and [Guohao Lan](https://guohao.netlify.app/). If you have any questions, please send an email to Lingyu.Du AT tudelft.nl.
 
 ## Description
 
