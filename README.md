@@ -70,9 +70,7 @@ The structure of privacy preserver $\mathcal{P}(\cdot)$ is shown in the followin
 ## Citation 
 
 Please cite the following paper in your publications if the code helps your research.
-
-<div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
-<pre>
+```
 @article{du2024privategaze,
   title={PrivateGaze: Preserving User Privacy in Black-box Mobile Gaze Tracking Services},
   author={Du, Lingyu and Jia, Jinyuan and Zhang, Xucong and Lan, Guohao},
@@ -82,5 +80,4 @@ Please cite the following paper in your publications if the code helps your rese
   year={2024},
   publisher={ACM New York, NY, USA}
 }
-</pre>
-</div>
+```
